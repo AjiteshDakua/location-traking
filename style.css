@@ -1,0 +1,147 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Poppins:ital,wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #b3e5fc; /* Light cyan background */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  background-image: linear-gradient(
+    45deg,
+    #0072ff,
+    #00c6ff
+  ); /* Blue to cyan gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.geo-btn {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.details-state {
+  display: none;
+}
+
+.details-state h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.coordinates,
+.address {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.address {
+  word-wrap: break-word;
+}
+
+.geo-btn,
+.back-btn {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-items: center;
+}
+.back-btn {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+.geo-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.geo-btn:active,
+.back-btn:active {
+  transform: translateY(1px);
+}
+.geo-btn i,
+.back-btn i {
+  margin-right: 8px; /* Adjusted for better alignment */
+  font-size: 1.2rem; /* Ensure icons are visible */
+}
+.weather-info {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.weather-info i {
+  margin-right: 8px; /* Adjusted for better alignment */
+  font-size: 1.2rem; /* Ensure icons are visible */
+}
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .geo-btn,
+  .back-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .details-state h2 {
+    font-size: 1.5rem;
+  }
+
+  .coordinates,
+  .address,
+  .weather-info {
+    font-size: 1.2rem;
+  }
+}
+/* ------ */

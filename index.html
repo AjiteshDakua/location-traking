@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Location App</title>
+    <link rel="icon" href="/images/maps-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/09a2c0f4d6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="initial-state">
+        <h1>Geo Location</h1>
+        <p>
+          Click the button below to find your current address and weather-info.
+        </p>
+        <button class="geo-btn">
+          <i class="fas fa-map-marker-alt"></i> Get My Location
+        </button>
+      </div>
+      <div class="details-state" style="display: none">
+        <h2>Your Details:</h2>
+        <p class="coordinates">
+          <i class="fas fa-map-marked-alt"></i> Latitude and Longitude will
+          appear here...
+        </p>
+        <p class="address">
+          <i class="fas fa-map-marker-alt"></i> Address will appear here...
+        </p>
+        <p class="weather-info">
+          <i class="fas fa-cloud-sun"></i> Weather information will appear
+          here...
+        </p>
+        <button class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
